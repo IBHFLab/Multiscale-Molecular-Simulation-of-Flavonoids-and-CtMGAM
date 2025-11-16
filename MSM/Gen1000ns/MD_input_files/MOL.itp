@@ -1,0 +1,303 @@
+; Created by Sobtop (http://sobereva.com/soft/sobtop) Version 1.0(dev3.1) on 2024-07-25
+
+[ atomtypes ]
+; name   at.num      mass       charge   ptype     sigma (nm)    epsilon (kJ/mol)
+ca           6    12.010736    0.000000    A      3.399670E-01    3.598240E-01
+os           8    15.999405    0.000000    A      3.000012E-01    7.112800E-01
+cc           6    12.010736    0.000000    A      3.399670E-01    3.598240E-01
+oh           8    15.999405    0.000000    A      3.066473E-01    8.803136E-01
+o            8    15.999405    0.000000    A      2.959922E-01    8.786400E-01
+c            6    12.010736    0.000000    A      3.399670E-01    3.598240E-01
+h4           1     1.007941    0.000000    A      2.510553E-01    6.276000E-02
+ha           1     1.007941    0.000000    A      2.599642E-01    6.276000E-02
+ho           1     1.007941    0.000000    A      0.000000E+00    0.000000E+00
+
+[ moleculetype ]
+; name          nrexcl
+MOL       3
+
+[ atoms ]
+;  Index   type   residue  resname   atom        cgnr     charge       mass
+     1     ca         1      MOL     C1            1   -0.70022960   12.010736
+     2     os         1      MOL     O2            2   -0.32895025   15.999405
+     3     cc         1      MOL     C3            3   -0.44370308   12.010736
+     4     oh         1      MOL     O4            4   -0.68925178   15.999405
+     5     ca         1      MOL     C5            5    0.66417936   12.010736
+     6     o          1      MOL     O6            6   -0.74967809   15.999405
+     7     c          1      MOL     C7            7    0.89230710   12.010736
+     8     oh         1      MOL     O8            8   -0.65906250   15.999405
+     9     ca         1      MOL     C9            9    0.13321923   12.010736
+    10     oh         1      MOL     O10          10   -0.67137265   15.999405
+    11     ca         1      MOL     C11          11    0.63558112   12.010736
+    12     cc         1      MOL     C12          12    0.25646854   12.010736
+    13     ca         1      MOL     C13          13   -0.71899959   12.010736
+    14     ca         1      MOL     C14          14   -0.62888607   12.010736
+    15     ca         1      MOL     C15          15    0.65129192   12.010736
+    16     ca         1      MOL     C16          16   -0.19452244   12.010736
+    17     ca         1      MOL     C17          17   -0.10146600   12.010736
+    18     ca         1      MOL     C18          18   -0.31573840   12.010736
+    19     ca         1      MOL     C19          19   -0.41460228   12.010736
+    20     ca         1      MOL     C20          20    0.48687578   12.010736
+    21     h4         1      MOL     H21          21    0.13729115    1.007941
+    22     ha         1      MOL     H22          22    0.26653819    1.007941
+    23     ha         1      MOL     H23          23    0.27880786    1.007941
+    24     ha         1      MOL     H24          24    0.17941354    1.007941
+    25     ha         1      MOL     H25          25    0.14766963    1.007941
+    26     ha         1      MOL     H26          26    0.19492631    1.007941
+    27     ha         1      MOL     H27          27    0.20867047    1.007941
+    28     ho         1      MOL     H28          28    0.50624006    1.007941
+    29     ho         1      MOL     H29          29    0.49927650    1.007941
+    30     ho         1      MOL     H30          30    0.47770598    1.007941
+ 
+[ bonds ]
+; atom_i  atom_j  functype      r0 (nm)    k (kJ/mol/nm^2)
+    1       5         1        0.139840     3.858485E+05     ; C1-C5, prebuilt ca-ca
+    1       7         1        0.149060     2.894491E+05     ; C1-C7, prebuilt c-ca
+    1      11         1        0.139840     3.858485E+05     ; C1-C11, prebuilt ca-ca
+    2       5         1        0.136960     3.151389E+05     ; O2-C5, prebuilt ca-os
+    2      12         1        0.136200     3.230885E+05     ; O2-C12, prebuilt cc-os
+    3       7         1        0.146760     3.104528E+05     ; C3-C7, prebuilt c-cc
+    3       9         1        0.145550     3.222517E+05     ; C3-C9, prebuilt ca-cc
+    3      12         1        0.142780     3.512886E+05     ; C3-C12, prebuilt cc-cc
+    4      11         1        0.136370     3.213312E+05     ; O4-C11, prebuilt ca-oh
+    4      28         1        0.097300     3.107875E+05     ; O4-H28, prebuilt ho-oh
+    5      13         1        0.139840     3.858485E+05     ; C5-C13, prebuilt ca-ca
+    6       7         1        0.121830     5.336274E+05     ; O6-C7, prebuilt c-o
+    8      15         1        0.136370     3.213312E+05     ; O8-C15, prebuilt ca-oh
+    8      29         1        0.097300     3.107875E+05     ; O8-H29, prebuilt ho-oh
+    9      16         1        0.139840     3.858485E+05     ; C9-C16, prebuilt ca-ca
+    9      17         1        0.139840     3.858485E+05     ; C9-C17, prebuilt ca-ca
+   10      20         1        0.136370     3.213312E+05     ; O10-C20, prebuilt ca-oh
+   10      30         1        0.097300     3.107875E+05     ; O10-H30, prebuilt ho-oh
+   11      14         1        0.139840     3.858485E+05     ; C11-C14, prebuilt ca-ca
+   12      21         1        0.108170     2.945536E+05     ; C12-H21, prebuilt cc-h4
+   13      15         1        0.139840     3.858485E+05     ; C13-C15, prebuilt ca-ca
+   13      22         1        0.108600     2.893654E+05     ; C13-H22, prebuilt ca-ha
+   14      15         1        0.139840     3.858485E+05     ; C14-C15, prebuilt ca-ca
+   14      23         1        0.108600     2.893654E+05     ; C14-H23, prebuilt ca-ha
+   16      18         1        0.139840     3.858485E+05     ; C16-C18, prebuilt ca-ca
+   16      24         1        0.108600     2.893654E+05     ; C16-H24, prebuilt ca-ha
+   17      19         1        0.139840     3.858485E+05     ; C17-C19, prebuilt ca-ca
+   17      25         1        0.108600     2.893654E+05     ; C17-H25, prebuilt ca-ha
+   18      20         1        0.139840     3.858485E+05     ; C18-C20, prebuilt ca-ca
+   18      26         1        0.108600     2.893654E+05     ; C18-H26, prebuilt ca-ha
+   19      20         1        0.139840     3.858485E+05     ; C19-C20, prebuilt ca-ca
+   19      27         1        0.108600     2.893654E+05     ; C19-H27, prebuilt ca-ha
+ 
+[ angles ]
+; atom_i  atom_j  atom_k  functype    a0 (Deg.)  k (kJ/mol/rad^2)
+    5       1       7         1       120.330      5.380624E+02     ; C5-C1-C7, prebuilt c-ca-ca
+    5       1      11         1       120.020      5.573088E+02     ; C5-C1-C11, prebuilt ca-ca-ca
+    7       1      11         1       120.330      5.380624E+02     ; C7-C1-C11, prebuilt c-ca-ca
+    5       2      12         1       113.080      5.481040E+02     ; C5-O2-C12, prebuilt ca-os-cc
+    7       3       9         1       122.950      5.271840E+02     ; C7-C3-C9, prebuilt c-cc-ca
+    7       3      12         1       122.690      5.322048E+02     ; C7-C3-C12, prebuilt c-cc-cc
+    9       3      12         1       111.040      5.623296E+02     ; C9-C3-C12, prebuilt ca-cc-cc
+   11       4      28         1       108.580      4.100320E+02     ; C11-O4-H28, prebuilt ca-oh-ho
+    1       5       2         1       119.200      5.824128E+02     ; C1-C5-O2, prebuilt ca-ca-os
+    1       5      13         1       120.020      5.573088E+02     ; C1-C5-C13, prebuilt ca-ca-ca
+    2       5      13         1       119.200      5.824128E+02     ; O2-C5-C13, prebuilt ca-ca-os
+    1       7       3         1       116.000      5.363888E+02     ; C1-C7-C3, prebuilt ca-c-cc
+    1       7       6         1       122.600      5.748816E+02     ; C1-C7-O6, prebuilt ca-c-o
+    3       7       6         1       123.930      5.782288E+02     ; C3-C7-O6, prebuilt cc-c-o
+   15       8      29         1       108.580      4.100320E+02     ; C15-O8-H29, prebuilt ca-oh-ho
+    3       9      16         1       120.790      5.439200E+02     ; C3-C9-C16, prebuilt ca-ca-cc
+    3       9      17         1       120.790      5.439200E+02     ; C3-C9-C17, prebuilt ca-ca-cc
+   16       9      17         1       120.020      5.573088E+02     ; C16-C9-C17, prebuilt ca-ca-ca
+   20      10      30         1       108.580      4.100320E+02     ; C20-O10-H30, prebuilt ca-oh-ho
+    1      11       4         1       119.900      5.815760E+02     ; C1-C11-O4, prebuilt ca-ca-oh
+    1      11      14         1       120.020      5.573088E+02     ; C1-C11-C14, prebuilt ca-ca-ca
+    4      11      14         1       119.900      5.815760E+02     ; O4-C11-C14, prebuilt ca-ca-oh
+    2      12       3         1       117.340      5.815760E+02     ; O2-C12-C3, prebuilt cc-cc-os
+    2      12      21         1       114.900      4.334624E+02     ; O2-C12-H21, prebuilt h4-cc-os
+    3      12      21         1       127.960      3.840912E+02     ; C3-C12-H21, prebuilt cc-cc-h4
+    5      13      15         1       120.020      5.573088E+02     ; C5-C13-C15, prebuilt ca-ca-ca
+    5      13      22         1       119.880      4.033376E+02     ; C5-C13-H22, prebuilt ca-ca-ha
+   15      13      22         1       119.880      4.033376E+02     ; C15-C13-H22, prebuilt ca-ca-ha
+   11      14      15         1       120.020      5.573088E+02     ; C11-C14-C15, prebuilt ca-ca-ca
+   11      14      23         1       119.880      4.033376E+02     ; C11-C14-H23, prebuilt ca-ca-ha
+   15      14      23         1       119.880      4.033376E+02     ; C15-C14-H23, prebuilt ca-ca-ha
+    8      15      13         1       119.900      5.815760E+02     ; O8-C15-C13, prebuilt ca-ca-oh
+    8      15      14         1       119.900      5.815760E+02     ; O8-C15-C14, prebuilt ca-ca-oh
+   13      15      14         1       120.020      5.573088E+02     ; C13-C15-C14, prebuilt ca-ca-ca
+    9      16      18         1       120.020      5.573088E+02     ; C9-C16-C18, prebuilt ca-ca-ca
+    9      16      24         1       119.880      4.033376E+02     ; C9-C16-H24, prebuilt ca-ca-ha
+   18      16      24         1       119.880      4.033376E+02     ; C18-C16-H24, prebuilt ca-ca-ha
+    9      17      19         1       120.020      5.573088E+02     ; C9-C17-C19, prebuilt ca-ca-ca
+    9      17      25         1       119.880      4.033376E+02     ; C9-C17-H25, prebuilt ca-ca-ha
+   19      17      25         1       119.880      4.033376E+02     ; C19-C17-H25, prebuilt ca-ca-ha
+   16      18      20         1       120.020      5.573088E+02     ; C16-C18-C20, prebuilt ca-ca-ca
+   16      18      26         1       119.880      4.033376E+02     ; C16-C18-H26, prebuilt ca-ca-ha
+   20      18      26         1       119.880      4.033376E+02     ; C20-C18-H26, prebuilt ca-ca-ha
+   17      19      20         1       120.020      5.573088E+02     ; C17-C19-C20, prebuilt ca-ca-ca
+   17      19      27         1       119.880      4.033376E+02     ; C17-C19-H27, prebuilt ca-ca-ha
+   20      19      27         1       119.880      4.033376E+02     ; C20-C19-H27, prebuilt ca-ca-ha
+   10      20      18         1       119.900      5.815760E+02     ; O10-C20-C18, prebuilt ca-ca-oh
+   10      20      19         1       119.900      5.815760E+02     ; O10-C20-C19, prebuilt ca-ca-oh
+   18      20      19         1       120.020      5.573088E+02     ; C18-C20-C19, prebuilt ca-ca-ca
+ 
+[ dihedrals ] ; propers
+; atom_i  atom_j  atom_k  atom_l  functype   d0 (Deg.)   k (kJ/mol/rad^2)    ; Case of functype=2
+; atom_i  atom_j  atom_k  atom_l  functype  phase (Deg.)  kd (kJ/mol) pn     ; Case of functype=9
+    1       5       2      12         9       180.000       3.76560    2     ; C1-C5-O2-C12, prebuilt X-ca-os-X
+    1       5      13      15         9       180.000      15.16700    2     ; C1-C5-C13-C15, prebuilt X-ca-ca-X
+    1       5      13      22         9       180.000      15.16700    2     ; C1-C5-C13-H22, prebuilt X-ca-ca-X
+    1       7       3       9         9       180.000      12.02900    2     ; C1-C7-C3-C9, prebuilt X-c-cc-X
+    1       7       3      12         9       180.000      12.02900    2     ; C1-C7-C3-C12, prebuilt X-c-cc-X
+    1      11       4      28         9       180.000       3.76560    2     ; C1-C11-O4-H28, prebuilt X-ca-oh-X
+    1      11      14      15         9       180.000      15.16700    2     ; C1-C11-C14-C15, prebuilt X-ca-ca-X
+    1      11      14      23         9       180.000      15.16700    2     ; C1-C11-C14-H23, prebuilt X-ca-ca-X
+    2       5       1       7         9       180.000      15.16700    2     ; O2-C5-C1-C7, prebuilt X-ca-ca-X
+    2       5       1      11         9       180.000      15.16700    2     ; O2-C5-C1-C11, prebuilt X-ca-ca-X
+    2       5      13      15         9       180.000      15.16700    2     ; O2-C5-C13-C15, prebuilt X-ca-ca-X
+    2       5      13      22         9       180.000      15.16700    2     ; O2-C5-C13-H22, prebuilt X-ca-ca-X
+    2      12       3       7         9       180.000      16.73600    2     ; O2-C12-C3-C7, prebuilt X-cc-cc-X
+    2      12       3       9         9       180.000      16.73600    2     ; O2-C12-C3-C9, prebuilt X-cc-cc-X
+    3       7       1       5         9       180.000       4.18400    2     ; C3-C7-C1-C5, prebuilt X-c-ca-X
+    3       7       1      11         9       180.000       4.18400    2     ; C3-C7-C1-C11, prebuilt X-c-ca-X
+    3       9      16      18         9       180.000      15.16700    2     ; C3-C9-C16-C18, prebuilt X-ca-ca-X
+    3       9      16      24         9       180.000      15.16700    2     ; C3-C9-C16-H24, prebuilt X-ca-ca-X
+    3       9      17      19         9       180.000      15.16700    2     ; C3-C9-C17-C19, prebuilt X-ca-ca-X
+    3       9      17      25         9       180.000      15.16700    2     ; C3-C9-C17-H25, prebuilt X-ca-ca-X
+    3      12       2       5         9         0.000       0.00000    1     ; C3-C12-O2-C5 (cc-cc-os-ca) missing
+    4      11       1       5         9       180.000      15.16700    2     ; O4-C11-C1-C5, prebuilt X-ca-ca-X
+    4      11       1       7         9       180.000      15.16700    2     ; O4-C11-C1-C7, prebuilt X-ca-ca-X
+    4      11      14      15         9       180.000      15.16700    2     ; O4-C11-C14-C15, prebuilt X-ca-ca-X
+    4      11      14      23         9       180.000      15.16700    2     ; O4-C11-C14-H23, prebuilt X-ca-ca-X
+    5       1       7       6         9       180.000       4.18400    2     ; C5-C1-C7-O6, prebuilt X-c-ca-X
+    5       1      11      14         9       180.000      15.16700    2     ; C5-C1-C11-C14, prebuilt X-ca-ca-X
+    5       2      12      21         9         0.000       0.00000    1     ; C5-O2-C12-H21 (ca-os-cc-h4) missing
+    5      13      15       8         9       180.000      15.16700    2     ; C5-C13-C15-O8, prebuilt X-ca-ca-X
+    5      13      15      14         9       180.000      15.16700    2     ; C5-C13-C15-C14, prebuilt X-ca-ca-X
+    6       7       1      11         9       180.000       4.18400    2     ; O6-C7-C1-C11, prebuilt X-c-ca-X
+    6       7       3       9         9       180.000      12.02900    2     ; O6-C7-C3-C9, prebuilt X-c-cc-X
+    6       7       3      12         9       180.000      12.02900    2     ; O6-C7-C3-C12, prebuilt X-c-cc-X
+    7       1       5      13         9       180.000      15.16700    2     ; C7-C1-C5-C13, prebuilt X-ca-ca-X
+    7       1      11      14         9       180.000      15.16700    2     ; C7-C1-C11-C14, prebuilt X-ca-ca-X
+    7       3       9      16         9         0.000       0.00000    1     ; C7-C3-C9-C16 (c-cc-ca-ca) missing
+    7       3       9      17         9         0.000       0.00000    1     ; C7-C3-C9-C17 (c-cc-ca-ca) missing
+    7       3      12      21         9       180.000      16.73600    2     ; C7-C3-C12-H21, prebuilt X-cc-cc-X
+    8      15      13      22         9       180.000      15.16700    2     ; O8-C15-C13-H22, prebuilt X-ca-ca-X
+    8      15      14      11         9       180.000      15.16700    2     ; O8-C15-C14-C11, prebuilt X-ca-ca-X
+    8      15      14      23         9       180.000      15.16700    2     ; O8-C15-C14-H23, prebuilt X-ca-ca-X
+    9       3      12      21         9       180.000      16.73600    2     ; C9-C3-C12-H21, prebuilt X-cc-cc-X
+    9      16      18      20         9       180.000      15.16700    2     ; C9-C16-C18-C20, prebuilt X-ca-ca-X
+    9      16      18      26         9       180.000      15.16700    2     ; C9-C16-C18-H26, prebuilt X-ca-ca-X
+    9      17      19      20         9       180.000      15.16700    2     ; C9-C17-C19-C20, prebuilt X-ca-ca-X
+    9      17      19      27         9       180.000      15.16700    2     ; C9-C17-C19-H27, prebuilt X-ca-ca-X
+   10      20      18      16         9       180.000      15.16700    2     ; O10-C20-C18-C16, prebuilt X-ca-ca-X
+   10      20      18      26         9       180.000      15.16700    2     ; O10-C20-C18-H26, prebuilt X-ca-ca-X
+   10      20      19      17         9       180.000      15.16700    2     ; O10-C20-C19-C17, prebuilt X-ca-ca-X
+   10      20      19      27         9       180.000      15.16700    2     ; O10-C20-C19-H27, prebuilt X-ca-ca-X
+   11       1       5      13         9       180.000      15.16700    2     ; C11-C1-C5-C13, prebuilt X-ca-ca-X
+   11      14      15      13         9       180.000      15.16700    2     ; C11-C14-C15-C13, prebuilt X-ca-ca-X
+   12       2       5      13         9       180.000       3.76560    2     ; C12-O2-C5-C13, prebuilt X-ca-os-X
+   12       3       9      16         9         0.000       0.00000    1     ; C12-C3-C9-C16 (cc-cc-ca-ca) missing
+   12       3       9      17         9         0.000       0.00000    1     ; C12-C3-C9-C17 (cc-cc-ca-ca) missing
+   13      15       8      29         9       180.000       3.76560    2     ; C13-C15-O8-H29, prebuilt X-ca-oh-X
+   13      15      14      23         9       180.000      15.16700    2     ; C13-C15-C14-H23, prebuilt X-ca-ca-X
+   14      11       4      28         9       180.000       3.76560    2     ; C14-C11-O4-H28, prebuilt X-ca-oh-X
+   14      15       8      29         9       180.000       3.76560    2     ; C14-C15-O8-H29, prebuilt X-ca-oh-X
+   14      15      13      22         9       180.000      15.16700    2     ; C14-C15-C13-H22, prebuilt X-ca-ca-X
+   16       9      17      19         9       180.000      15.16700    2     ; C16-C9-C17-C19, prebuilt X-ca-ca-X
+   16       9      17      25         9       180.000      15.16700    2     ; C16-C9-C17-H25, prebuilt X-ca-ca-X
+   16      18      20      19         9       180.000      15.16700    2     ; C16-C18-C20-C19, prebuilt X-ca-ca-X
+   17       9      16      18         9       180.000      15.16700    2     ; C17-C9-C16-C18, prebuilt X-ca-ca-X
+   17       9      16      24         9       180.000      15.16700    2     ; C17-C9-C16-H24, prebuilt X-ca-ca-X
+   17      19      20      18         9       180.000      15.16700    2     ; C17-C19-C20-C18, prebuilt X-ca-ca-X
+   18      20      10      30         9       180.000       3.76560    2     ; C18-C20-O10-H30, prebuilt X-ca-oh-X
+   18      20      19      27         9       180.000      15.16700    2     ; C18-C20-C19-H27, prebuilt X-ca-ca-X
+   19      20      10      30         9       180.000       3.76560    2     ; C19-C20-O10-H30, prebuilt X-ca-oh-X
+   19      20      18      26         9       180.000      15.16700    2     ; C19-C20-C18-H26, prebuilt X-ca-ca-X
+   20      18      16      24         9       180.000      15.16700    2     ; C20-C18-C16-H24, prebuilt X-ca-ca-X
+   20      19      17      25         9       180.000      15.16700    2     ; C20-C19-C17-H25, prebuilt X-ca-ca-X
+   24      16      18      26         9       180.000      15.16700    2     ; H24-C16-C18-H26, prebuilt X-ca-ca-X
+   25      17      19      27         9       180.000      15.16700    2     ; H25-C17-C19-H27, prebuilt X-ca-ca-X
+
+[ pairs ] ; Yielded based on rotatable dihedrals
+; atom_i  atom_j  functype
+    1      12         1     ; C1-C5-O2-C12
+    1      15         1     ; C1-C5-C13-C15
+    1      22         1     ; C1-C5-C13-H22
+    1       9         1     ; C1-C7-C3-C9
+    1      28         1     ; C1-C11-O4-H28
+    1      23         1     ; C1-C11-C14-H23
+    2       7         1     ; O2-C5-C1-C7
+    2      11         1     ; O2-C5-C1-C11
+    2      15         1     ; O2-C5-C13-C15
+    2      22         1     ; O2-C5-C13-H22
+    2       9         1     ; O2-C12-C3-C9
+    3       5         1     ; C3-C7-C1-C5
+    3      11         1     ; C3-C7-C1-C11
+    3      18         1     ; C3-C9-C16-C18
+    3      24         1     ; C3-C9-C16-H24
+    3      19         1     ; C3-C9-C17-C19
+    3      25         1     ; C3-C9-C17-H25
+    4       5         1     ; O4-C11-C1-C5
+    4       7         1     ; O4-C11-C1-C7
+    4      15         1     ; O4-C11-C14-C15
+    4      23         1     ; O4-C11-C14-H23
+    5       6         1     ; C5-C1-C7-O6
+    5      14         1     ; C5-C1-C11-C14
+    5      21         1     ; C5-O2-C12-H21
+    5       8         1     ; C5-C13-C15-O8
+    6      11         1     ; O6-C7-C1-C11
+    6       9         1     ; O6-C7-C3-C9
+    6      12         1     ; O6-C7-C3-C12
+    7      13         1     ; C7-C1-C5-C13
+    7      14         1     ; C7-C1-C11-C14
+    7      16         1     ; C7-C3-C9-C16
+    7      17         1     ; C7-C3-C9-C17
+    7      21         1     ; C7-C3-C12-H21
+    8      22         1     ; O8-C15-C13-H22
+    8      11         1     ; O8-C15-C14-C11
+    8      23         1     ; O8-C15-C14-H23
+    9      21         1     ; C9-C3-C12-H21
+    9      20         1     ; C9-C16-C18-C20
+    9      26         1     ; C9-C16-C18-H26
+    9      27         1     ; C9-C17-C19-H27
+   10      16         1     ; O10-C20-C18-C16
+   10      26         1     ; O10-C20-C18-H26
+   10      17         1     ; O10-C20-C19-C17
+   10      27         1     ; O10-C20-C19-H27
+   11      13         1     ; C11-C1-C5-C13
+   12      13         1     ; C12-O2-C5-C13
+   12      16         1     ; C12-C3-C9-C16
+   12      17         1     ; C12-C3-C9-C17
+   13      29         1     ; C13-C15-O8-H29
+   13      23         1     ; C13-C15-C14-H23
+   14      28         1     ; C14-C11-O4-H28
+   14      29         1     ; C14-C15-O8-H29
+   14      22         1     ; C14-C15-C13-H22
+   16      19         1     ; C16-C9-C17-C19
+   16      25         1     ; C16-C9-C17-H25
+   17      18         1     ; C17-C9-C16-C18
+   17      24         1     ; C17-C9-C16-H24
+   18      30         1     ; C18-C20-O10-H30
+   18      27         1     ; C18-C20-C19-H27
+   19      30         1     ; C19-C20-O10-H30
+   19      26         1     ; C19-C20-C18-H26
+   20      24         1     ; C20-C18-C16-H24
+   20      25         1     ; C20-C19-C17-H25
+   24      26         1     ; H24-C16-C18-H26
+   25      27         1     ; H25-C17-C19-H27
+ 
+[ dihedrals ] ; impropers
+; atom_i  atom_j  atom_k  atom_l  functype  phase (Deg.)  kd (kJ/mol)  pn
+    5       7       1      11         4       180.000       4.60240    2     ; C5-C7-C1-C11, guess (same as GAFF X -X -ca-ha)
+    1       2       5      13         4       180.000       4.60240    2     ; C1-O2-C5-C13, guess (same as GAFF X -X -ca-ha)
+    1       3       7       6         4       180.000      43.93200    2     ; C1-C3-C7-O6, prebuilt X-X-c-o
+    3      16       9      17         4       180.000       4.60240    2     ; C3-C16-C9-C17, guess (same as GAFF X -X -ca-ha)
+    1       4      11      14         4       180.000       4.60240    2     ; C1-O4-C11-C14, guess (same as GAFF X -X -ca-ha)
+    5      15      13      22         4       180.000       4.60240    2     ; C5-C15-C13-H22, prebuilt X-X-ca-ha
+   11      15      14      23         4       180.000       4.60240    2     ; C11-C15-C14-H23, prebuilt X-X-ca-ha
+    8      13      15      14         4       180.000       4.60240    2     ; O8-C13-C15-C14, guess (same as GAFF X -X -ca-ha)
+    9      18      16      24         4       180.000       4.60240    2     ; C9-C18-C16-H24, prebuilt X-X-ca-ha
+    9      19      17      25         4       180.000       4.60240    2     ; C9-C19-C17-H25, prebuilt X-X-ca-ha
+   16      20      18      26         4       180.000       4.60240    2     ; C16-C20-C18-H26, prebuilt X-X-ca-ha
+   17      20      19      27         4       180.000       4.60240    2     ; C17-C20-C19-H27, prebuilt X-X-ca-ha
+   10      18      20      19         4       180.000       4.60240    2     ; O10-C18-C20-C19, guess (same as GAFF X -X -ca-ha)
+
+#ifdef POSRES
+#include "posre_MOL.itp"
+#endif
