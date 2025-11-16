@@ -1,0 +1,89 @@
+title       = Umbrella pulling simulation 
+
+; PREPROCESSING OPTIONS
+define      = -DPOSRES
+
+; RUN CONTROL PARAMETERS
+integrator  = md
+; Start time and Timestep in ps
+dt          = 0.002
+tinit       = 0
+nsteps      = 50000     ; 100 ps 
+; Center of mass motion removal
+nstcomm     = 10            ; number of steps for center of mass motion removal
+
+; OUTPUT CONTROL OPTIONS
+nstvout             = 5000  ; every 10 ps 
+nstfout             = 5000
+nstxout-compressed  = 5000
+nstenergy           = 5000
+
+; OPTIONS FOR BONDS
+constraint_algorithm    = lincs
+constraints             = h-bonds
+continuation            = no 
+
+; NEIGHBOR SEARCHING PARAMETERS
+; Single-range cutoff scheme
+cutoff-scheme   = Verlet
+nstlist         = 20
+ns_type         = grid 
+rlist           = 1.4
+rcoulomb        = 1.4
+; Periodic boundary conditions are on in all directions
+pbc     = xyz
+
+; Van der Waals OPTIONS
+rvdw            = 1.4
+; Long-range dispersion correction
+DispCorr    = EnerPres
+
+; ELECTROSTATICS AND EDWALD OPTIONS
+; PME electrostatics parameters
+coulombtype     = PME
+fourierspacing  = 0.12
+fourier_nx      = 0
+fourier_ny      = 0
+fourier_nz      = 0
+pme_order       = 4
+ewald_rtol      = 1e-5
+optimize_fft    = yes
+
+; OPTIONS FOR WEAK COUPLING ALGORITHMS
+; Temperature coupling is on in two groups
+Tcoupl      = V-rescale
+tc_grps     = Protein_Myr   Water_and_ions
+tau_t       = 0.5       0.5
+ref_t       = 310       310
+; Pressure coupling is on
+Pcoupl          = Berendsen
+pcoupltype      = isotropic
+tau_p           = 1.0       
+compressibility = 4.5e-5
+ref_p           = 1.0
+refcoord_scaling = com
+
+; GENERATE VELOCITIES FOR STARTUP RUN
+; Generate velocities is on 
+gen_vel     = yes 
+gen_temp    = 310
+
+; COM PULLING
+pull                    = yes
+; Number of pull coordinates
+pull_ncoords            = 1         ; only one reaction coordinate 
+; Number of pull groups 
+pull_ngroups            = 2         ; two groups defining one reaction coordinate 
+; Group and coordinate parameters
+pull_group1_name        = Myr
+pull_group2_name        = Protein 
+pull_coord1_type        = umbrella  ; harmonic potential
+pull_coord1_geometry    = distance  ; simple distance increase 
+pull_coord1_dim         = N N Y
+pull_coord1_groups      = 1 2
+pull_coord1_start       = yes       ; define initial COM distance > 0
+pull_coord1_rate        = 0.00      ; 0.01 nm per ps = 10 nm per ns
+pull_coord1_k           = 2000      ; kJ mol^-1 nm^-2
+; pull-group1-pbcatom     = 
+; pull-group2-pbcatom     = 
+; pull-pbc-ref-prev-step-com    = yes

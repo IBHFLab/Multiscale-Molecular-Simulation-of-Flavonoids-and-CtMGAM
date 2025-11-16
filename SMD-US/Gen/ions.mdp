@@ -1,0 +1,22 @@
+; RUN CONTROL PARAMETERS
+integrator      = steep  
+nsteps          = 50000     ; Maximum number of minimization steps
+
+; ENERGY MINIMIZATION OPTIONS
+; Force tolerance and initial step-size
+emtol           = 1000.0    ; Stop minimization when max force < 1000.0 kJ/mol/nm
+emstep          = 0.01      ; Energy step size   
+
+; NEIGHBOR SEARCHING PARAMETERS
+ns_type         = grid  
+pbc             = xyz   
+cutoff-scheme   = Verlet
+rlist           = 1.4
+nstlist         = 1         ; Frequency to update the neighbor list and long range forces  
+
+; ELECTROSTATICS OPTIONS
+coulombtype     = cutoff       ; Treatment of long range electrostatic interactions
+rcoulomb        = 1.4       ; Short-range electrostatic cut-off
+
+; Van der Waals OPTIONS
+rvdw            = 1.4       ; Short-range Van der Waals cut-off
