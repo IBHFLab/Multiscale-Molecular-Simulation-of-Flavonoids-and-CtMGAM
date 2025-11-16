@@ -1,0 +1,4 @@
+IGM filter=lfs diff=lfs merge=lfs -text
+MSM filter=lfs diff=lfs merge=lfs -text
+SMD-US filter=lfs diff=lfs merge=lfs -text
+IFP filter=lfs diff=lfs merge=lfs -text
